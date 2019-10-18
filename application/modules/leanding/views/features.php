@@ -18,7 +18,7 @@
                     <div class="row">
                         <!-- FEATURES LEFT -->
                         <div class="col-md-4 col-sm-6">
-                            <ul class="features-list features-list-left">
+                            <ul class="features-list features-list-right">
                                 <li class="features-list-item animated" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Icon -->
                                     <i class="fa fa-leaf fa-3x"></i>
@@ -53,10 +53,10 @@
                         </div>
                         <!-- FEATURES RIGHT -->
                         <div class="col-md-4 col-md-push-4 col-sm-6">
-                            <ul class="features-list features-list-right">
+                            <ul class="features-list features-list-left">
                                 <li class="features-list-item animated" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Icon -->
-                                    <i class="fa  fa-pagelines fa-3x"></i>
+                                    <i class="fa fa-pagelines fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
                                         <h5>Different Colors</h5>
@@ -88,7 +88,7 @@
                         </div>
                         <!-- CLOSE UP PHONE IMAGE -->
                         <div class="col-md-4 col-md-pull-4 app-image animated" data-animation="fadeInUp" data-animation-delay="800">
-                            <img src="images/features/1.png" alt="" >
+                            <img src="<?=base_url('assets/images/features/1.png')?>" alt="" >
                         </div>
                     </div>
                 </div>
