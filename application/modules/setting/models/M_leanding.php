@@ -18,7 +18,6 @@ class M_leanding extends CI_Model
         $sql="SELECT * FROM conten WHERE conten_status='1' ORDER BY id_";
         $data = $this->db->query($sql);
         return $data->result();
-
     }
     /* End of file x.php */
 }

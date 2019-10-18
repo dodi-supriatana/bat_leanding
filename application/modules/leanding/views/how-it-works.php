@@ -1,14 +1,14 @@
-        <!-- How It Works Begins -->	
+        <!-- How It Works Begins -->
         <section id="how-it-works" class="how-it-works">
             <div class="container how-it-works-inner">
                 <!-- Title & Desc Row Begins -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <!-- Title --> 
+                        <!-- Title -->
                         <div class="title">
-                            <h2> How It  <span>Works</span></h2>
+                            <h2> How It <span>Works</span></h2>
                         </div>
-                        <!-- Description --> 
+                        <!-- Description -->
                         <p class="desc">We ensure quality & support. People love us & we love them. Here goes some simple dummy text.</p>
                     </div>
                 </div>
@@ -17,9 +17,9 @@
                 <div class="row">
                     <!-- Left Part Begins -->
                     <div class="col-md-5 text-center">
-                        <div class="benefits">				
-                            <img style="width: 250px; height: 514px;" src="images/small-screen.png"  alt="" class="relative animated" data-animation="fadeInLeft" data-animation-delay="500">
-                            <img src="images/big-screen.png" alt="" class="phone-image-right relative animated" data-animation="fadeInLeft" data-animation-delay="1200">
+                        <div class="benefits">
+                            <img style="width: 250px; height: 514px;" src="<?= base_url('assets/images/small-screen.png') ?>" alt="" class="relative animated" data-animation="fadeInLeft" data-animation-delay="500">
+                            <img src="<?= base_url('assets/images/big-screen.png') ?>" alt="" class="phone-image-right relative animated" data-animation="fadeInLeft" data-animation-delay="1200">
                         </div>
                     </div>
                     <!-- Left Part Ends -->
@@ -33,33 +33,33 @@
                             <!-- Lists -->
                             <ul>
                                 <li>
-									<!-- Icon -->
+                                    <!-- Icon -->
                                     <i class="fa fa-bell-o"></i>
-									<!-- Text -->
+                                    <!-- Text -->
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </li>
                                 <li>
-									<!-- Icon -->
+                                    <!-- Icon -->
                                     <i class="fa fa-star-o"></i>
-									<!-- Text -->
+                                    <!-- Text -->
                                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </li>
                                 <li>
-									<!-- Icon -->
+                                    <!-- Icon -->
                                     <i class="fa fa-comment-o"></i>
-									<!-- Text -->
+                                    <!-- Text -->
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </li>
                                 <li>
-									<!-- Icon -->
+                                    <!-- Icon -->
                                     <i class="fa  fa-heart-o"></i>
-									<!-- Text -->
+                                    <!-- Text -->
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <!-- Right Part Ends -->				
+                    <!-- Right Part Ends -->
                 </div>
                 <!-- How It Works Row Ends -->
             </div>
