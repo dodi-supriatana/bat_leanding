@@ -24,7 +24,7 @@
         </td>
     </tr>
     <tr>
-        <th>Desc</th>
+        <th style="width: 120px">Desc</th>
         <td>
             <div ondblclick="onedit('desc', 'home')" id="desc">
                 <p style="padding: 0; margin: 0" id="desc1"><?= $home->desc ?></p>
