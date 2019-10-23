@@ -19,5 +19,13 @@ class M_leanding extends CI_Model
         $data = $this->db->query($sql);
         return $data->result();
     }
+
+    public function update($table)
+    {
+        // $data['title_wihite'] = 'BEST WAY TO';
+        $data[$this->input->post('field')] = $this->input->post('data');
+        $this->db->update($table, $data);
+        return json_encode($data);
+    }
     /* End of file x.php */
 }

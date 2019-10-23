@@ -84,87 +84,25 @@
       <div class="row title-row">
         <!-- Accordion Begins -->
         <div class="col-md-12 tab-menu animated" data-animation="fadeInUp" data-animation-delay="300">
-          <h3>Setting Menu</h3>
+          <div style="margin: 0 5px 50px 5px">
+            <h3 class="pull-left">Setting Menu</h3>
+            <a target="_blank" href="<?=base_url()?>" class="btn btn-danger pull-right">Preview</a>
+          </div>
           <div id="accordion1" class="panel-group short-code accordion">
             <!-- Accordion Box 5 Begins -->
             <div class="panel panel-default border-hidden">
               <div class="panel-heading">
                 <!-- Accordion Box 1 Title -->
                 <h4 class="panel-title">
-                  <a href="#collapseFive" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                  <a onclick="load_html('home')" href="#collapseFive" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
                     Home
                   </a>
                 </h4>
               </div>
               <!-- Accordion Box 5 Description -->
               <div class="accordion-body collapse" id="collapseFive" style="height: 0px;">
-                <div class="panel-body" style="background-color: white">
-                  <table class="table table-bordered" style="cursor: pointer">
-                    <tr>
-                      <th>Title White</th>
-                      <td>
-                        <div ondblclick="onedit('title_wihite', 'home')" id="title_wihite">
-                          <p style="padding: 0; margin: 0" id="title_wihite1"><?= $home->title_wihite ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Title Red</th>
-                      <td>
-                        <div ondblclick="onedit('Title_red', 'home')" id="Title_red">
-                          <p style="padding: 0; margin: 0" id="Title_red1"><?= $home->Title_red ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Middle Title</th>
-                      <td>
-                        <div ondblclick="onedit('midle_title', 'home')" id="midle_title">
-                          <p style="padding: 0; margin: 0" id="midle_title1"><?= $home->midle_title ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Desc</th>
-                      <td>
-                        <div ondblclick="onedit('desc', 'home')" id="desc">
-                          <p style="padding: 0; margin: 0" id="desc1"><?= $home->desc ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Image 1</th>
-                      <td>
-                        <div ondblclick="onedit('img_1', 'home')" id="img_1">
-                          <p style="padding: 0; margin: 0" id="img_11"><?= $home->img_1 ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Image 2</th>
-                      <td>
-                        <div ondblclick="onedit('img_2', 'home')" id="img_2">
-                          <p style="padding: 0; margin: 0" id="img_21"><?= $home->img_2 ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Image 3</th>
-                      <td>
-                        <div ondblclick="onedit('img_3', 'home')" id="img_3">
-                          <p style="padding: 0; margin: 0" id="img_31"><?= $home->img_3 ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th>Title White 2</th>
-                      <td>
-                        <div ondblclick="onedit('title_wihite_2', 'home')" id="title_wihite_2">
-                          <p style="padding: 0; margin: 0" id="title_wihite_21"><?= $home->title_wihite_2 ?></p>
-                        </div>
-                      </td>
-                    </tr>
-                  </table>
+                <div class="panel-body" style="background-color: white" id="home_con">
+
                 </div>
               </div>
             </div>
@@ -174,17 +112,15 @@
               <div class="panel-heading">
                 <!-- Accordion Box 2 Title -->
                 <h4 class="panel-title">
-                  <a href="#collapseSix" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
-                    Tristique sit amet condim vel?
+                  <a onclick="load_html('welcome')" href="#collapseSix" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Welcome
                   </a>
                 </h4>
               </div>
               <!-- Accordion Box 2 Description -->
               <div class="accordion-body collapse" id="collapseSix" style="height: 0px;">
-                <div class="panel-body white">
-                  Donec tellus massa, tristique sit amet condim vel, facilisis
-                  quis sapien. Praesent id enim sit.Curabitur nec posuere odio
-                  ultrices non pretium ac.
+                <div class="panel-body" style="background-color: white" id="welcome_con">
+
                 </div>
               </div>
             </div>
@@ -316,6 +252,18 @@
             //   var val = $(this).html()
             //   $(this).html('<input type="text" class="form-control disabled" value="' + val + '">')
             // })
+            var temp = '';
+
+            function load_html(page) {
+              if (page != temp) {
+                $('#' + temp + '_con').html('');
+                temp = page;
+              } else {
+                temp = page;
+                console.log(temp);
+              }
+              $('#' + page + '_con').load("<?= base_url() ?>setting/load_html/" + page);
+            }
 
             function onedit(param, table) {
               var item = document.getElementById(param + '1').innerHTML
@@ -330,13 +278,16 @@
               document.getElementById(param).innerHTML = "<p style='padding: 0; margin: 0' id='" + param + '1' + "'>" + item + "</p>"
               $.ajax({
                 type: 'POST',
-                url: "<?= base_url() ?>setting/setting_update/".table,
+                url: "<?= base_url() ?>setting/setting_update/" + table,
                 data: {
                   data: item,
                   field: param
                 },
                 dataType: 'json',
-                success: function(resp) {}
+                success: function(resp) {},
+                error: function(err) {
+                  alert('ajax error');
+                }
               })
               return false;
             }
