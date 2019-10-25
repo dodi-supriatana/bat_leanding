@@ -24,7 +24,7 @@
         </td>
     </tr>
     <tr>
-        <th>Desc</th>
+        <th style="width: 120px;">Desc</th>
         <td>
             <div ondblclick="onedit('desc', 'welcome')" id="desc">
                 <p style="padding: 0; margin: 0" id="desc1"><?= $welcome->desc ?></p>
@@ -45,7 +45,7 @@
         $icon = 'icon_'.$i;
     ?>
     <tr>
-        <th>Label Title<?=$i?></th>
+        <th>Label Title <?=$i?></th>
         <td>
             <div ondblclick="onedit('<?=$label?>', 'welcome')" id="<?=$label?>">
                 <p style="padding: 0; margin: 0" id="<?=$label?>1"><?= $welcome->$label ?></p>
@@ -53,7 +53,7 @@
         </td>
     </tr>
     <tr>
-        <th>Label Description<?=$i?></th>
+        <th>Label Description <?=$i?></th>
         <td>
             <div ondblclick="onedit('<?=$desc?>', 'welcome')" id="<?=$desc?>">
                 <p style="padding: 0; margin: 0" id="<?=$desc?>1"><?= $welcome->$desc ?></p>

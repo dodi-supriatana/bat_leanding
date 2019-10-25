@@ -86,7 +86,7 @@
         <div class="col-md-12 tab-menu animated" data-animation="fadeInUp" data-animation-delay="300">
           <div style="margin: 0 5px 50px 5px">
             <h3 class="pull-left">Setting Menu</h3>
-            <a target="_blank" href="<?=base_url()?>" class="btn btn-danger pull-right">Preview</a>
+            <a target="_blank" href="<?= base_url() ?>" class="btn btn-danger pull-right">Preview</a>
           </div>
           <div id="accordion1" class="panel-group short-code accordion">
             <!-- Accordion Box 5 Begins -->
@@ -267,28 +267,45 @@
 
             function onedit(param, table) {
               var item = document.getElementById(param + '1').innerHTML
+              var box = '';
+              if (item.length > 64) {
+                box = "<textarea onkeypress=\"return editok('" + param + "', '" + table + "', '1', event)\" class='form-control ta' id='" + param + '2' + "' rows='3'>" + item + "</textarea>";
+              } else {
+                box = "<input type='text' class='form-control' id='" + param + '2' + "' value='" + item + "'>"
+              }
               var edit = "<form onsubmit=\"return editok('" + param + "', '" + table + "')\" method='POST'>" +
-                "<input type='text' class='form-control' id='" + param + '2' + "' value='" + item + "'>" +
+                box +
                 "</form>";
               document.getElementById(param).innerHTML = edit
             }
 
-            function editok(param, table) {
+            function editok(param, table, ta = 0, event) {
               var item = document.getElementById(param + '2').value
-              document.getElementById(param).innerHTML = "<p style='padding: 0; margin: 0' id='" + param + '1' + "'>" + item + "</p>"
-              $.ajax({
-                type: 'POST',
-                url: "<?= base_url() ?>setting/setting_update/" + table,
-                data: {
-                  data: item,
-                  field: param
-                },
-                dataType: 'json',
-                success: function(resp) {},
-                error: function(err) {
-                  alert('ajax error');
-                }
-              })
+              if (ta == '1' && event.keyCode == 13) {
+                console.log(1);
+                console.log(event.keyCode)
+                ta = 0;
+              }
+              else if(ta == '1'){
+                item = item + event.key
+                document.getElementById(param + '2').value = item
+              }
+              if (ta == 0) {
+                document.getElementById(param).innerHTML = "<p style='padding: 0; margin: 0' id='" + param + '1' + "'>" + item + "</p>"
+                $.ajax({
+                  type: 'POST',
+                  url: "<?= base_url() ?>setting/setting_update/" + table,
+                  data: {
+                    data: item,
+                    field: param
+                  },
+                  dataType: 'json',
+                  success: function(resp) {},
+                  error: function(err) {
+                    alert('ajax error');
+                  }
+                })
+              }
               return false;
             }
           </script>
