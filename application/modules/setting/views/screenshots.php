@@ -26,59 +26,56 @@
     <tr>
         <th style="width: 120px">Image_1</th>
         <td>
-            <div ondblclick="onedit('image_1', 'screenshots')" id="image_1">
-                <p style="padding: 0; margin: 0" id="image_11"><?= $screenshots->image_1 ?></p>
-            </div>
-            <!-- <div ondblclick="onedit('image_1', 'screenshots')" id="img">
+            <div ondblclick="onedit('image_1', 'screenshots')" id="img">
                 <?php echo form_upload('image_1', null, 'class="form-control" id="image_1" data-table="screenshots" name="image_1" onchange="submitForm(\'image_1\', \'screenshots\')"') ?>
-            </div> -->
+            </div>
         </td>
     </tr>
     <tr>
         <th>Image 2</th>
         <td>
-            <div ondblclick="onedit('image_2', 'screenshots')" id="image_2">
-                <p style="padding: 0; margin: 0" id="image_21"><?= $screenshots->image_2 ?></p>
+            <div ondblclick="onedit('image_2', 'screenshots')" id="img">
+                <?php echo form_upload('image_2', null, 'class="form-control" id="image_2" data-table="screenshots" name="image_2" onchange="submitForm(\'image_2\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 3</th>
         <td>
-            <div ondblclick="onedit('image_3', 'screenshots')" id="image_3">
-                <p style="padding: 0; margin: 0" id="image_31"><?= $screenshots->image_3 ?></p>
+            <div ondblclick="onedit('image_3', 'screenshots')" id="img">
+                <?php echo form_upload('image_3', null, 'class="form-control" id="image_3" data-table="screenshots" name="image_3" onchange="submitForm(\'image_3\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 4</th>
         <td>
-            <div ondblclick="onedit('image_4', 'screenshots')" id="image_4">
-                <p style="padding: 0; margin: 0" id="image_41"><?= $screenshots->image_4 ?></p>
+            <div ondblclick="onedit('image_4', 'screenshots')" id="img">
+                <?php echo form_upload('image_4', null, 'class="form-control" id="image_4" data-table="screenshots" name="image_4" onchange="submitForm(\'image_4\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 5</th>
         <td>
-            <div ondblclick="onedit('image_5', 'screenshots')" id="image_5">
-                <p style="padding: 0; margin: 0" id="image_51"><?= $screenshots->image_5 ?></p>
+            <div ondblclick="onedit('image_5', 'screenshots')" id="img">
+                <?php echo form_upload('image_5', null, 'class="form-control" id="image_5" data-table="screenshots" name="image_5" onchange="submitForm(\'image_5\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 6</th>
         <td>
-            <div ondblclick="onedit('image_6', 'screenshots')" id="image_6">
-                <p style="padding: 0; margin: 0" id="image_61"><?= $screenshots->image_6 ?></p>
+            <div ondblclick="onedit('image_6', 'screenshots')" id="img">
+                <?php echo form_upload('image_6', null, 'class="form-control" id="image_6" data-table="screenshots" name="image_6" onchange="submitForm(\'image_6\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 7</th>
         <td>
-            <div ondblclick="onedit('image_7', 'screenshots')" id="image_7">
-                <p style="padding: 0; margin: 0" id="image_71"><?= $screenshots->image_7 ?></p>
+            <div ondblclick="onedit('image_7', 'screenshots')" id="img">
+                <?php echo form_upload('image_7', null, 'class="form-control" id="image_7" data-table="screenshots" name="image_7" onchange="submitForm(\'image_7\', \'screenshots\')"') ?>
             </div>
         </td>
     </tr>

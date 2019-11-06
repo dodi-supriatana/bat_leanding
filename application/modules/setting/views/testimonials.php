@@ -18,8 +18,11 @@
     <tr>
         <th>Image 1</th>
         <td>
-            <div ondblclick="onedit('image_1', 'testimonials')" id="image_1">
+            <!-- <div ondblclick="onedit('image_1', 'testimonials')" id="image_1">
                 <p style="padding: 0; margin: 0" id="image_11"><?= $testimonials->image_1 ?></p>
+            </div> -->
+            <div ondblclick="onedit('image_1', 'testimonials')" id="img">
+                <?php echo form_upload('image_1', null, 'class="form-control" id="image_1" data-table="testimonials" name="image_1" onchange="submitForm(\'image_1\', \'testimonials\')"') ?>
             </div>
         </td>
     </tr>
@@ -42,8 +45,8 @@
     <tr>
         <th>Image 2</th>
         <td>
-            <div ondblclick="onedit('image_2', 'testimonials')" id="image_2">
-                <p style="padding: 0; margin: 0" id="image_21"><?= $testimonials->image_2 ?></p>
+            <div ondblclick="onedit('image_2', 'testimonials')" id="img">
+                <?php echo form_upload('image_2', null, 'class="form-control" id="image_2" data-table="testimonials" name="image_2" onchange="submitForm(\'image_2\', \'testimonials\')"') ?>
             </div>
         </td>
     </tr>
@@ -66,8 +69,8 @@
     <tr>
         <th>Image 3</th>
         <td>
-            <div ondblclick="onedit('image_3', 'testimonials')" id="image_3">
-                <p style="padding: 0; margin: 0" id="image_31"><?= $testimonials->image_3 ?></p>
+            <div ondblclick="onedit('image_3', 'testimonials')" id="img">
+                <?php echo form_upload('image_3', null, 'class="form-control" id="image_3" data-table="testimonials" name="image_3" onchange="submitForm(\'image_3\', \'testimonials\')"') ?>
             </div>
         </td>
     </tr>

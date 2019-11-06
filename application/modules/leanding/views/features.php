@@ -88,7 +88,6 @@
                         </div>
                         <!-- CLOSE UP PHONE IMAGE -->
                         <div class="col-md-4 col-md-pull-4 app-image animated" data-animation="fadeInUp" data-animation-delay="800">
-                            <!-- <img src="<?=base_url('assets/images/features/'.$features->image)?>" alt="" > -->
                             <img src="<?php echo base_url('assets/') . 'images/features/'.$features->image.'' ?>" alt="" class="img-responsive" />
                         </div>
                     </div>
