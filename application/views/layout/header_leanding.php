@@ -50,14 +50,14 @@
 				<!-- Navigation Bar -->
 				<div class="navbar-header">
 					<!-- Responsive Menu Button -->
-					<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+					<button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle navbar-light navbar-toggler-icon" style="background-color : transparent">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 					<!-- Logo Image -->
-					<a href="index.html" class="navbar-brand"><img style="margin-top: -25px;width: 160px; height:75px" src="<?php echo base_url('assets/') . 'images/logo.png' ?>" alt="Layer App Landing Page"></a>
+					<a href="./" class="navbar-brand"><img style="margin-top: -25px;width: 160px; height:75px" src="<?php echo base_url('assets/') . 'images/logo.png' ?>" alt="Layer App Landing Page"></a>
 				</div>
 				<!-- End Navigation Bar -->
 				<!-- Navigation Menu -->

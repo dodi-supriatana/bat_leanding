@@ -6,12 +6,12 @@
                     <!-- Title & Desc Row Begins -->
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <!-- Title --> 
+                            <!-- Title -->
                             <div class="title">
-                                <h2> Awesome  <span>Features</span></h2>
+                                <h2> <?= $features->white_title ?>  <span><?= $features->red_title ?></span></h2>
                             </div>
                             <!-- Description --> 
-                            <p class="desc white">We ensure quality & support. People love us & we love them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="desc white"><?= $features->description ?></p>
                         </div>
                     </div>
                     <!-- Title & Desc Row Ends -->
@@ -21,32 +21,32 @@
                             <ul class="features-list features-list-right">
                                 <li class="features-list-item animated" data-animation="fadeInLeft" data-animation-delay="500">
 									<!-- Icon -->
-                                    <i class="fa fa-leaf fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_1 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>Creative Design</h5>
+                                        <h5><?= $features->label_title_1 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_1 ?></p>
                                     </div>
                                 </li>
                                 <li class="features-list-item animated" data-animation="fadeInLeft" data-animation-delay="800">
 									<!-- Icon -->
-                                    <i class="fa fa-lightbulb-o fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_2 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>Easy to Customize</h5>
+                                        <h5><?= $features->label_title_2 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_2 ?></p>
                                     </div>
                                 </li>
                                 <li class="features-list-item animated" data-animation="fadeInLeft" data-animation-delay="1100">
 									<!-- Icon -->
-                                    <i class="fa fa-code fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_3 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>Bootstrap 3</h5>
+                                        <h5><?= $features->label_title_3 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_3 ?></p>
                                     </div>
                                 </li>
                             </ul>
@@ -56,39 +56,40 @@
                             <ul class="features-list features-list-left">
                                 <li class="features-list-item animated" data-animation="fadeInRight" data-animation-delay="500">
 									<!-- Icon -->
-                                    <i class="fa fa-pagelines fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_4 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>Different Colors</h5>
+                                        <h5><?= $features->label_title_4 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_4 ?></p>
                                     </div>
                                 </li>
                                 <li class="features-list-item animated" data-animation="fadeInRight" data-animation-delay="800">
 									<!-- Icon -->
-                                    <i class="fa fa-globe fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_5 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>SEO Friendly</h5>
+                                        <h5><?= $features->label_title_5 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_5 ?></p>
                                     </div>
                                 </li>
                                 <li class="features-list-item animated" data-animation="fadeInRight" data-animation-delay="1100">
 									<!-- Icon -->
-                                    <i class="fa fa-microphone fa-3x"></i>
+                                    <i class="fa fa-<?= $features->icon_6 ?> fa-3x"></i>
                                     <div class="features-content">
 										<!-- Title -->
-                                        <h5>24/7 Support</h5>
+                                        <h5><?= $features->label_title_6 ?></h5>
 										<!-- Text -->
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit est is. </p>
+                                        <p><?= $features->label_description_6 ?></p>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <!-- CLOSE UP PHONE IMAGE -->
                         <div class="col-md-4 col-md-pull-4 app-image animated" data-animation="fadeInUp" data-animation-delay="800">
-                            <img src="<?=base_url('assets/images/features/1.png')?>" alt="" >
+                            <!-- <img src="<?=base_url('assets/images/features/'.$features->image)?>" alt="" > -->
+                            <img src="<?php echo base_url('assets/') . 'images/features/'.$features->image.'' ?>" alt="" class="img-responsive" />
                         </div>
                     </div>
                 </div>

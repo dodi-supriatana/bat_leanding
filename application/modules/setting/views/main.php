@@ -27,6 +27,7 @@
   <link href="<?php echo base_url('assets/') . 'css/flexslider.css' ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/') . 'css/tweet-carousel.css' ?>" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="<?php echo base_url('assets/') . 'css/simpletextrotator.html' ?>" />
+  <link rel="stylesheet" href="<?php echo base_url('assets/') . 'css/style_setting.css' ?>"/>
   <!-- Main Style -->
   <link href="<?php echo base_url('assets/') . 'css/style.css' ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/') . 'css/responsive.css' ?>" rel="stylesheet" type="text/css" />
@@ -39,16 +40,10 @@
 <body id="pages">
   <!-- Header Begins -->
   <header>
-    <div class="navbar navbar-fixed-top" id="navigation">
+    <div class="navbar navbar-fixed-top navbar-setting" id="navigation">
       <div class="container">
         <!-- Navigation Bar -->
         <div class="navbar-header">
-          <!-- Responsive Menu Button -->
-          <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <!-- Logo Image -->
           <a href="index.html" class="navbar-brand"><img src="<?php echo base_url('assets/') . 'images/logo.png' ?>" alt="Layer App Landing Page" /></a>
         </div>
@@ -130,17 +125,15 @@
               <div class="panel-heading">
                 <!-- Accordion Box 3 Title -->
                 <h4 class="panel-title">
-                  <a href="#collapseSeven" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
-                    Curabitur nec posuere odio ultrices non pretium?
+                  <a onclick="load_html('features')" href="#collapseSeven" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Features
                   </a>
                 </h4>
               </div>
               <!-- Accordion Box 3 Description -->
               <div class="accordion-body collapse" id="collapseSeven" style="height: 0px;">
-                <div class="panel-body white">
-                  Donec tellus massa, tristique sit amet condim vel, facilisis
-                  quis sapien. Praesent id enim sit.Curabitur nec posuere odio
-                  ultrices non pretium ac.
+                <div class="panel-body" style="background-color: white" id="features_con">
+                  
                 </div>
               </div>
             </div>
@@ -150,13 +143,121 @@
               <div class="panel-heading">
                 <!-- Accordion Box 4 Title -->
                 <h4 class="panel-title">
-                  <a href="#collapseEight" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
-                    Facilisis quis sapien praesent id enim sit?
+                  <a onclick="load_html('how_it_works')" href="#collapseEight" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    How it works
                   </a>
                 </h4>
               </div>
               <!-- Accordion Box 4 Description -->
               <div class="accordion-body collapse" id="collapseEight" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="how_it_works_con">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 4 Ends -->
+            <!-- Accordion Box 5 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 5 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('additional')" href="#collapseNine" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Additional Features
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 5 Description -->
+              <div class="accordion-body collapse" id="collapseNine" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="additional_con">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 5 Ends -->
+            <!-- Accordion Box 6 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 6 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('screenshots')" href="#collapseTen" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Screenshots
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 6 Description -->
+              <div class="accordion-body collapse" id="collapseTen" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="screenshots_con">
+
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 6 Ends -->
+            <!-- Accordion Box 7 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 7 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('counting')" href="#collapseNew" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Counting
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 7 Description -->
+              <div class="accordion-body collapse" id="collapseNew" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="counting_con">
+
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 7 Ends -->
+            <!-- Accordion Box 8 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 8 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('demo_video')" href="#collapseEleven" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Demo-Video
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 8 Description -->
+              <div class="accordion-body collapse" id="collapseEleven" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="demo_video_con">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 8 Ends -->
+            <!-- Accordion Box 9 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 9 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('testimonials')" href="#collapseTesti" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Testimonials
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 9 Description -->
+              <div class="accordion-body collapse" id="collapseTesti" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="testimonials_con">
+                  
+                </div>
+              </div>
+            </div>
+            <!-- Accordion Box 9 Ends -->
+            <!-- Accordion Box 10 Begins -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 10 Title -->
+                <h4 class="panel-title">
+                  <a href="#collapseTwelve" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Contact
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 10 Description -->
+              <div class="accordion-body collapse" id="collapseTwelve" style="height: 0px;">
                 <div class="panel-body white">
                   Donec tellus massa, tristique sit amet condim vel, facilisis
                   quis sapien. Praesent id enim sit.Curabitur nec posuere odio
@@ -164,7 +265,7 @@
                 </div>
               </div>
             </div>
-            <!-- Accordion Box 4 Ends -->
+            <!-- Accordion Box 10 Ends -->
           </div>
         </div>
         <!-- Accordion Ends -->
@@ -268,6 +369,7 @@
             function onedit(param, table) {
               var item = document.getElementById(param + '1').innerHTML
               var box = '';
+              console.log(item, 'ini item')
               if (item.length > 64) {
                 box = "<textarea onkeypress=\"return editok('" + param + "', '" + table + "', '1', event)\" class='form-control ta' id='" + param + '2' + "' rows='3'>" + item + "</textarea>";
               } else {
@@ -277,6 +379,23 @@
                 box +
                 "</form>";
               document.getElementById(param).innerHTML = edit
+            }
+
+            function submitForm(field,table) {
+              console.log(field);
+              var fd = new FormData();
+              var files = $('#' + field)[0].files[0];
+              fd.append('file', files);
+              $.ajax ({
+                url: '<?= base_url() ?>setting/uploadImg?table='+table+'&field='+field,
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function(response) {
+                  console.log(response);
+                }
+              })
             }
 
             function editok(param, table, ta = 0, event) {

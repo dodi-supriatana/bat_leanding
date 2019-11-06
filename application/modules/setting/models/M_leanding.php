@@ -27,5 +27,10 @@ class M_leanding extends CI_Model
         $this->db->update($table, $data);
         return json_encode($data);
     }
+
+    public function update_image($table, $data)
+    {
+        $this->db->update($table, $data);
+    }
     /* End of file x.php */
 }

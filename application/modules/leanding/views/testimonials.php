@@ -10,12 +10,12 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </div>
                                 <!-- Name -->	
-                                <h5 class="italic"> - Masum Rana <span>of BiriOala.</span></h5>
+                                <h5 class="italic"> - Masum Rana</h5>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
                             <!-- Image -->								
-                            <img src="images/testimonials/1.png" alt="" />
+                            <img src="<?= base_url('assets/images/testimonials/1.png' )?>" alt="" />
                         </div>
                     </div>
                     <!-- End Testionial 1 -->	
@@ -27,12 +27,12 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
                                 </div>
                                 <!-- Name -->
-                                <h5 class="italic"> - Masum Rana <span>of BiriOala.</span></h5>
+                                <h5 class="italic"> - Masum Rana</h5>
                             </div>
                         </div>
                         <div class="col-md-3 text-center">
                             <!-- Image -->								
-                            <img src="images/testimonials/2.png" alt="" />
+                            <img src="<?= base_url('assets/images/testimonials/2.png' )?>" alt="" />
                         </div>
                     </div>
                     <!-- End Testionial 2 -->	
@@ -49,7 +49,7 @@
                         </div>
                         <div class="col-md-3 text-center ">
                             <!-- Image -->								
-                            <img src="images/testimonials/3.png" alt="" />
+                            <img src="<?= base_url('assets/images/testimonials/3.png' )?>" alt="" />
                         </div>
                     </div>
                     <!-- End Testionial 3 -->

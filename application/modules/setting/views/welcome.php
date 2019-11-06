@@ -34,39 +34,42 @@
     <tr>
         <th>Image</th>
         <td>
-            <div ondblclick="onedit('image', 'welcome')" id="image">
+            <div ondblclick="onedit('image', 'welcome')" id="img">
+                <?php echo form_upload('image', null, 'class="form-control" id="image" data-table="welcome" name="image" onchange="submitForm(\'image\', \'welcome\')"') ?>
+            </div>
+            <!-- <div ondblclick="onedit('image', 'welcome')" id="image">
                 <p style="padding: 0; margin: 0" id="image1"><?= $welcome->image ?></p>
-            </div>
+            </div> -->
         </td>
     </tr>
-    <?php for($i = 1; $i<=3; $i++){ 
-        $label = 'label_title_'.$i;
-        $desc = 'label_description_'.$i;
-        $icon = 'icon_'.$i;
-    ?>
-    <tr>
-        <th>Label Title <?=$i?></th>
-        <td>
-            <div ondblclick="onedit('<?=$label?>', 'welcome')" id="<?=$label?>">
-                <p style="padding: 0; margin: 0" id="<?=$label?>1"><?= $welcome->$label ?></p>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <th>Label Description <?=$i?></th>
-        <td>
-            <div ondblclick="onedit('<?=$desc?>', 'welcome')" id="<?=$desc?>">
-                <p style="padding: 0; margin: 0" id="<?=$desc?>1"><?= $welcome->$desc ?></p>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <th>Icon <?=$i?></th>
-        <td>
-            <div ondblclick="onedit('<?=$icon?>', 'welcome')" id="<?=$icon?>">
-                <p style="padding: 0; margin: 0" id="<?=$icon?>1"><?= $welcome->$icon ?></p>
-            </div>
-        </td>
-    </tr>
+    <?php for ($i = 1; $i <= 3; $i++) {
+        $label = 'label_title_' . $i;
+        $desc = 'label_description_' . $i;
+        $icon = 'icon_' . $i;
+        ?>
+        <tr>
+            <th>Label Title <?= $i ?></th>
+            <td>
+                <div ondblclick="onedit('<?= $label ?>', 'welcome')" id="<?= $label ?>">
+                    <p style="padding: 0; margin: 0" id="<?= $label ?>1"><?= $welcome->$label ?></p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>Label Description <?= $i ?></th>
+            <td>
+                <div ondblclick="onedit('<?= $desc ?>', 'welcome')" id="<?= $desc ?>">
+                    <p style="padding: 0; margin: 0" id="<?= $desc ?>1"><?= $welcome->$desc ?></p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th>Icon <?= $i ?></th>
+            <td>
+                <div ondblclick="onedit('<?= $icon ?>', 'welcome')" id="<?= $icon ?>">
+                    <p style="padding: 0; margin: 0" id="<?= $icon ?>1"><?= $welcome->$icon ?></p>
+                </div>
+            </td>
+        </tr>
     <?php } ?>
 </table>

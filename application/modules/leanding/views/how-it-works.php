@@ -6,10 +6,10 @@
                     <div class="col-md-12 text-center">
                         <!-- Title -->
                         <div class="title">
-                            <h2> How It <span>Works</span></h2>
+                            <h2> <?= $how_it_works->black_title ?> <span><?= $how_it_works->red_title ?></span></h2>
                         </div>
                         <!-- Description -->
-                        <p class="desc">We ensure quality & support. People love us & we love them. Here goes some simple dummy text.</p>
+                        <p class="desc"><?= $how_it_works->title_description ?></p>
                     </div>
                 </div>
                 <!-- Title & Desc Row Ends -->
@@ -18,8 +18,8 @@
                     <!-- Left Part Begins -->
                     <div class="col-md-5 text-center">
                         <div class="benefits">
-                            <img style="width: 250px; height: 514px;" src="<?= base_url('assets/images/small-screen.png') ?>" alt="" class="relative animated" data-animation="fadeInLeft" data-animation-delay="500">
-                            <img src="<?= base_url('assets/images/big-screen.png') ?>" alt="" class="phone-image-right relative animated" data-animation="fadeInLeft" data-animation-delay="1200">
+                            <img style="width: 250px; height: 514px;" src="<?= base_url('assets/') . 'images/how_it_works/' .$how_it_works->image_2 ?>" alt="" class="relative animated" data-animation="fadeInLeft" data-animation-delay="500">
+                            <img src="<?= base_url('assets/') . 'images/how_it_works/' .$how_it_works->image_1 ?>" alt="" class="phone-image-right relative animated" data-animation="fadeInLeft" data-animation-delay="1200">
                         </div>
                     </div>
                     <!-- Left Part Ends -->
@@ -27,34 +27,34 @@
                     <div class="col-md-7">
                         <div class="about-right text-left">
                             <!-- Desc -->
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+                            <p><?= $how_it_works->desc ?></p>
                             <!-- Title -->
-                            <h3>Benefits Of App</h3>
+                            <h3><?= $how_it_works->subtitle ?></h3>
                             <!-- Lists -->
                             <ul>
                                 <li>
                                     <!-- Icon -->
-                                    <i class="fa fa-bell-o"></i>
+                                    <i class="fa fa-<?= $how_it_works->icon_1 ?>-o"></i>
                                     <!-- Text -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+                                    <p><?= $how_it_works->item_description_1 ?></p>
                                 </li>
                                 <li>
                                     <!-- Icon -->
-                                    <i class="fa fa-star-o"></i>
+                                    <i class="fa fa-<?= $how_it_works->icon_2 ?>-o"></i>
                                     <!-- Text -->
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+                                    <p><?= $how_it_works->item_description_2 ?></p>
                                 </li>
                                 <li>
                                     <!-- Icon -->
-                                    <i class="fa fa-comment-o"></i>
+                                    <i class="fa fa-<?= $how_it_works->icon_3 ?>-o"></i>
                                     <!-- Text -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+                                    <p><?= $how_it_works->item_description_3 ?></p>
                                 </li>
                                 <li>
                                     <!-- Icon -->
-                                    <i class="fa  fa-heart-o"></i>
+                                    <i class="fa  fa-<?= $how_it_works->icon_4 ?>-o"></i>
                                     <!-- Text -->
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
+                                    <p><?= $how_it_works->item_description_4 ?></p>
                                 </li>
                             </ul>
                         </div>

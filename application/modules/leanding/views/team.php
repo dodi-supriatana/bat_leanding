@@ -24,7 +24,7 @@
                                 <div class="team-box-inner">
                                     <!-- Thumbnail -->
                                     <div class="team-thumbnail">
-                                        <img src="images/team/1.jpg" alt="team" class="img-responsive" />
+                                        <img src="<?= base_url('assets/images/team/1.jpg' )?>" alt="team" class="img-responsive" />
                                     </div>
                                     <div class="about-member">
                                         <div class="member-details">
@@ -54,7 +54,7 @@
                                 <div class="team-box-inner">
                                     <!-- Thumbnail -->
                                     <div class="team-thumbnail">
-                                        <img src="images/team/2.jpg" alt="team" class="img-responsive" />
+                                        <img src="<?= base_url('assets/images/team/2.jpg' )?>" alt="team" class="img-responsive" />
                                     </div>
                                     <div class="about-member">
                                         <div class="member-details">
@@ -84,7 +84,7 @@
                                 <div class="team-box-inner">
                                     <!-- Thumbnail -->
                                     <div class="team-thumbnail">
-                                        <img src="images/team/3.jpg" alt="team" class="img-responsive" />
+                                        <img src="<?= base_url('assets/images/team/3.jpg' )?>" alt="team" class="img-responsive" />
                                     </div>
                                     <div class="about-member">
                                         <div class="member-details">
@@ -114,7 +114,7 @@
                                 <div class="team-box-inner">
                                     <!-- Thumbnail -->
                                     <div class="team-thumbnail">
-                                        <img src="images/team/4.jpg" alt="team" class="img-responsive" />
+                                        <img src="<?= base_url('assets/images/team/4.jpg' )?>" alt="team" class="img-responsive" />
                                     </div>
                                     <div class="about-member">
                                         <div class="member-details">
