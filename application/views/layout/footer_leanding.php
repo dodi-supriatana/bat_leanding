@@ -27,6 +27,7 @@
 <script type="text/javascript" src="<?php echo base_url('assets/') . 'js/custom.js' ?>"></script>
 <!-- Color -->
 <script type="text/javascript" src="<?php echo base_url('assets/') . 'js/color-panel.js' ?>"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtZNz9aMpD-tDGdjX_ZmvkdCLe8orp7U&callback=initMap" async defer></script>
 
 <script type="text/javascript">
     var mapStyle = [{
@@ -190,11 +191,12 @@
         }
     ];
 
-    var map,bounds
-    var markers = [{
+    var map, bounds
+    var markers = {
         lat: -6.330159,
         lang: 106.680048
-    }]
+    }
+
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             styles: mapStyle,
@@ -271,8 +273,7 @@
 
     setMarkers(markers, map, bounds)
 </script>
-<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmtZNz9aMpD-tDGdjX_ZmvkdCLe8orp7U&callback=initMap" async defer></script>
+<!-- <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script> -->
 <!-- Script Ends -->
 <script type="text/javascript">
     if (self == top) {
@@ -300,6 +301,7 @@
         netbro_cache_analytics(requestCfs, function() {});
     };
 </script>
+
 </body>
 
 <!-- Mirrored from zozothemes.com/html/layer/new-variants/image-bg/demo3/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Sep 2019 14:21:27 GMT -->

@@ -278,26 +278,22 @@
                 </div>
               </div>
             </div>
-            <!-- Accordion Box 10 Begins -->
             <div class="panel panel-default">
               <div class="panel-heading">
-                <!-- Accordion Box 10 Title -->
+                <!-- Accordion Box 9 Title -->
                 <h4 class="panel-title">
-                  <a href="#collapseTwelve" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
-                    Contact
+                  <a onclick="load_html('news')" href="#collapseNews" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    news
                   </a>
                 </h4>
               </div>
-              <!-- Accordion Box 10 Description -->
-              <div class="accordion-body collapse" id="collapseTwelve" style="height: 0px;">
-                <div class="panel-body white">
-                  Donec tellus massa, tristique sit amet condim vel, facilisis
-                  quis sapien. Praesent id enim sit.Curabitur nec posuere odio
-                  ultrices non pretium ac.
+              <!-- Accordion Box 9 Description -->
+              <div class="accordion-body collapse" id="collapseNews" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="news_con">
+
                 </div>
               </div>
             </div>
-            <!-- Accordion Box 10 Ends -->
           </div>
         </div>
         <!-- Accordion Ends -->

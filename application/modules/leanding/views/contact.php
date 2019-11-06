@@ -38,7 +38,7 @@
                             <!-- Form Ends -->
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-5" style="margin-top : 5px;">
                         <div style="height : 400px; background-color : red" id="map">
                             
                         </div>
