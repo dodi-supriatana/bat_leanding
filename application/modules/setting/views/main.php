@@ -27,7 +27,7 @@
   <link href="<?php echo base_url('assets/') . 'css/flexslider.css' ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/') . 'css/tweet-carousel.css' ?>" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="<?php echo base_url('assets/') . 'css/simpletextrotator.html' ?>" />
-  <link rel="stylesheet" href="<?php echo base_url('assets/') . 'css/style_setting.css' ?>"/>
+  <link rel="stylesheet" href="<?php echo base_url('assets/') . 'css/style_setting.css' ?>" />
   <!-- Main Style -->
   <link href="<?php echo base_url('assets/') . 'css/style.css' ?>" rel="stylesheet" type="text/css" />
   <link href="<?php echo base_url('assets/') . 'css/responsive.css' ?>" rel="stylesheet" type="text/css" />
@@ -133,7 +133,7 @@
               <!-- Accordion Box 3 Description -->
               <div class="accordion-body collapse" id="collapseSeven" style="height: 0px;">
                 <div class="panel-body" style="background-color: white" id="features_con">
-                  
+
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@
               <!-- Accordion Box 4 Description -->
               <div class="accordion-body collapse" id="collapseEight" style="height: 0px;">
                 <div class="panel-body" style="background-color: white" id="how_it_works_con">
-                  
+
                 </div>
               </div>
             </div>
@@ -169,11 +169,27 @@
               <!-- Accordion Box 5 Description -->
               <div class="accordion-body collapse" id="collapseNine" style="height: 0px;">
                 <div class="panel-body" style="background-color: white" id="additional_con">
-                  
+
                 </div>
               </div>
             </div>
             <!-- Accordion Box 5 Ends -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 5 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('price_table')" href="#collapsePrice" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    Price table
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 5 Description -->
+              <div class="accordion-body collapse" id="collapsePrice" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="price_table_con">
+
+                </div>
+              </div>
+            </div>
             <!-- Accordion Box 6 Begins -->
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -223,7 +239,7 @@
               <!-- Accordion Box 8 Description -->
               <div class="accordion-body collapse" id="collapseEleven" style="height: 0px;">
                 <div class="panel-body" style="background-color: white" id="demo_video_con">
-                  
+
                 </div>
               </div>
             </div>
@@ -241,11 +257,27 @@
               <!-- Accordion Box 9 Description -->
               <div class="accordion-body collapse" id="collapseTesti" style="height: 0px;">
                 <div class="panel-body" style="background-color: white" id="testimonials_con">
-                  
+
                 </div>
               </div>
             </div>
             <!-- Accordion Box 9 Ends -->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <!-- Accordion Box 9 Title -->
+                <h4 class="panel-title">
+                  <a onclick="load_html('team')" href="#collapseTeam" data-parent="#accordion1" data-toggle="collapse" class="accordion-toggle collapsed bold">
+                    team
+                  </a>
+                </h4>
+              </div>
+              <!-- Accordion Box 9 Description -->
+              <div class="accordion-body collapse" id="collapseTeam" style="height: 0px;">
+                <div class="panel-body" style="background-color: white" id="team_con">
+
+                </div>
+              </div>
+            </div>
             <!-- Accordion Box 10 Begins -->
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -381,13 +413,13 @@
               document.getElementById(param).innerHTML = edit
             }
 
-            function submitForm(field,table) {
+            function submitForm(field, table) {
               console.log(field);
               var fd = new FormData();
               var files = $('#' + field)[0].files[0];
               fd.append('file', files);
-              $.ajax ({
-                url: '<?= base_url() ?>setting/uploadImg?table='+table+'&field='+field,
+              $.ajax({
+                url: '<?= base_url() ?>setting/uploadImg?table=' + table + '&field=' + field,
                 type: 'post',
                 data: fd,
                 contentType: false,
@@ -404,8 +436,7 @@
                 console.log(1);
                 console.log(event.keyCode)
                 ta = 0;
-              }
-              else if(ta == '1'){
+              } else if (ta == '1') {
                 item = item + event.key
                 document.getElementById(param + '2').value = item
               }

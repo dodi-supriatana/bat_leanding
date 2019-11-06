@@ -4,29 +4,29 @@
                 <!-- Title & Desc Row Begins -->
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <!-- Title --> 
+                        <!-- Title -->
                         <div class="title">
-                            <h2> App's  <span>News</span></h2>
+                            <h2> App's <span>News</span></h2>
                         </div>
-                        <!-- Description --> 
+                        <!-- Description -->
                         <p class="desc">We ensure quality & support. People love us & we love them. Here goes some simple dummy text.</p>
                     </div>
                 </div>
                 <!-- Title & Desc Row Ends -->
                 <!-- Blog Inner Begins -->
                 <div class="blog-scroll-section">
-                    <!-- Row 1 Begins -->						
+                    <!-- Row 1 Begins -->
                     <div class="row load-more active">
-                        <!-- Blog 1 Begins -->							
+                        <!-- Blog 1 Begins -->
                         <div class="col-md-12 col-sm-12 animated" data-animation="fadeInLeft" data-animation-delay="400">
                             <!-- Blog 1 Box -->
                             <div class="blog-box effects clearfix effect6">
                                 <!-- Blog 1 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-image"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
-                                        <a href="images/blog/1.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
+                                        <a href="<?php echo base_url('assets/') . 'images/blog/1.jpg' ?>" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
                                 </div>
                                 <!-- Blog 1 content -->
@@ -44,9 +44,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Blog 1 Box Ends -->					
+                            <!-- Blog 1 Box Ends -->
                         </div>
-                        <!-- Blog 1 Ends -->		
+                        <!-- Blog 1 Ends -->
                         <!-- Blog 2 Begins -->
                         <div class="col-md-12 col-sm-12 animated" data-animation="fadeInRight" data-animation-delay="400">
                             <!-- Blog 2 Box Begins -->
@@ -54,9 +54,9 @@
                                 <!-- Blog 2 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-video-camera"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
-                                        <a href="images/blog/2.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
+                                        <a href="<?php echo base_url('assets/') . 'images/blog/2.jpg' ?>" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
                                 </div>
                                 <!-- Blog 2 content -->
@@ -88,9 +88,9 @@
                                 <!-- Blog 3 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-sliders"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
-                                        <a href="images/blog/3.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
+                                        <a href="<?php echo base_url('assets/') . 'images/blog/3.jpg' ?>" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
                                 </div>
                                 <!-- Blog 3 content -->
@@ -118,9 +118,9 @@
                                 <!-- Blog 4 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-microphone"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
-                                        <a href="images/blog/4.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
+                                        <a href="<?php echo base_url('assets/') . 'images/blog/4.jpg' ?>" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
                                 </div>
                                 <!-- Blog 4 content -->
@@ -152,7 +152,7 @@
                                 <!-- Blog 5 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-image"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
                                         <a href="images/blog/1.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -182,7 +182,7 @@
                                 <!-- Blog 6 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-image"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
                                         <a href="images/blog/2.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -217,7 +217,7 @@
                                 <!-- Blog 5 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-image"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
                                         <a href="images/blog/3.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -248,7 +248,7 @@
                                 <!-- Blog 6 image -->
                                 <div class="blog-image img">
                                     <i class="fa img-icon fa-video-camera"></i>
-                                    <!-- Overlay Gallery -->										
+                                    <!-- Overlay Gallery -->
                                     <div class="overlay">
                                         <a href="images/blog/4.jpg" data-rel="prettyPhoto[gallery1]" class="expand"><i class="fa fa-expand"></i></a>
                                     </div>
@@ -277,9 +277,9 @@
                     <div class="col-md-12 load-post text-center">
                         <button class="btn slide-btn load-posts" type="button">Load More Post <i class="flaticon-arrow209"></i></button>
                     </div>
-                    <!-- Load More Button Ends -->					
+                    <!-- Load More Button Ends -->
                 </div>
-                <!-- Blog Inner Ends -->		
+                <!-- Blog Inner Ends -->
             </div>
             <!-- Container Ends -->
         </section>
