@@ -525,26 +525,14 @@ header .navbar-nav>li>a {
 #mobileslider.owl-theme .owl-controls .owl-buttons div {
 	top:40%;
 }
-/* #mobileslider.owl-theme .owl-controls .owl-buttons .owl-prev:before {
-	font-family:Flaticon;
-	/* content:"\e0ab"!important; */
-	/* left:30px;
-	font-size:60px;
-	color:#ffffff; */
-} */
+
 #mobileslider.owl-theme .owl-controls .owl-buttons .owl-prev {
 	transform:rotate(180deg);
 	-moz-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
 	-webkit-transform:rotate(180deg);
 }
-/* #mobileslider.owl-theme .owl-controls .owl-buttons .owl-next:before {
-	/* font-family:Flaticon; */
-	/* content:"\e0ab" !important; */
-	/* left:33px;
-	font-size:60px;
-	color: #ffffff; */
-} */
+
 /* =========================== WELCOME SECTION ============================== */
 .welcome-section {
 	position:relative;

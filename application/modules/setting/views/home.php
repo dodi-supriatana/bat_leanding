@@ -24,6 +24,14 @@
         </td>
     </tr>
     <tr>
+        <th>Title White 2</th>
+        <td>
+            <div ondblclick="onedit('title_wihite_2', 'home')" id="title_wihite_2">
+                <p style="padding: 0; margin: 0" id="title_wihite_21"><?= $home->title_wihite_2 ?></p>
+            </div>
+        </td>
+    </tr>
+    <tr>
         <th style="width: 120px">Desc</th>
         <td>
             <div ondblclick="onedit('desc', 'home')" id="desc">
@@ -34,33 +42,27 @@
     <tr>
         <th>Image 1</th>
         <td>
-            <div ondblclick="onedit('img_1', 'home')" id="img_1">
-                <p style="padding: 0; margin: 0" id="img_11"><?= $home->img_1 ?></p>
+            <div ondblclick="onedit('img_1', 'home')" id="img">
+                <?php echo form_upload('img_1', null, 'class="form-control" id="img_1" data-table="home" name="img_1" onchange="submitForm(\'img_1\', \'home\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 2</th>
         <td>
-            <div ondblclick="onedit('img_2', 'home')" id="img_2">
-                <p style="padding: 0; margin: 0" id="img_21"><?= $home->img_2 ?></p>
+            <div ondblclick="onedit('img_2', 'home')" id="img">
+                <?php echo form_upload('img_2', null, 'class="form-control" id="img_2" data-table="home" name="img_2" onchange="submitForm(\'img_2\', \'home\')"') ?>
             </div>
         </td>
     </tr>
     <tr>
         <th>Image 3</th>
         <td>
-            <div ondblclick="onedit('img_3', 'home')" id="img_3">
-                <p style="padding: 0; margin: 0" id="img_31"><?= $home->img_3 ?></p>
+            <div ondblclick="onedit('img_3', 'home')" id="img">
+                <?php echo form_upload('img_3', null, 'class="form-control" id="img_3" data-table="home" name="img_3" onchange="submitForm(\'img_3\', \'home\')"') ?>
+                <!-- <p style="padding: 0; margin: 0" id="img_31"><?= $home->img_3 ?></p> -->
             </div>
         </td>
     </tr>
-    <tr>
-        <th>Title White 2</th>
-        <td>
-            <div ondblclick="onedit('title_wihite_2', 'home')" id="title_wihite_2">
-                <p style="padding: 0; margin: 0" id="title_wihite_21"><?= $home->title_wihite_2 ?></p>
-            </div>
-        </td>
-    </tr>
+
 </table>

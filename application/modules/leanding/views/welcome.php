@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-6 col-sm-6 text-center animated" data-animation="fadeInUp" data-animation-delay="500">
                         <!-- Welcome Box 1 Begins -->
-                        <img src="<?=base_url('assets/images/'.$welcome->image)?>" alt="" />
+                        <img src="<?php echo base_url('assets/') . 'images/welcome/'.$welcome->image.'' ?>" alt="" class="img-responsive" />
                     </div>
                     <!-- Welcome Box 1 Ends -->
                 </div>

@@ -23,13 +23,13 @@
     			<!-- Screenshots List -->
     			<div id="mobileslider">
     				<div class="mobile-img">
-    					<img src="<?php echo base_url('assets/') . 'images/slider/'.$home->img_1.'' ?>" alt="" class="img-responsive" />
+    					<img src="<?php echo base_url('assets/') . 'images/home/' . $home->img_1 . '' ?>" alt="" class="img-responsive" />
     				</div>
     				<div class="mobile-img">
-    					<img src="<?php echo base_url('assets/') . 'images/slider/'.$home->img_2.''?>" alt="" class="img-responsive" />
+    					<img src="<?php echo base_url('assets/') . 'images/home/' . $home->img_2 . '' ?>" alt="" class="img-responsive" />
     				</div>
     				<div class="mobile-img">
-    					<img src="<?php echo base_url('assets/') . 'images/slider/'.$home->img_3.''?>" alt="" class="img-responsive" />
+    					<img src="<?php echo base_url('assets/') . 'images/home/' . $home->img_3 . '' ?>" alt="" class="img-responsive" />
     				</div>
     			</div>
     			<!-- End Screenshots List-->

@@ -15,7 +15,7 @@
                 <!-- Title & Desc Row Ends -->
                 <!-- Contact Row Begins -->
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1 animated" data-animation="fadeInUp" data-animation-delay="300">
+                    <div class="col-md-5 col-md-offset-1 animated" data-animation="fadeInUp" data-animation-delay="300">
                         <p class="form-message" style="display: none;"></p>
                         <div class="contact-form">
                             <!-- Form Begins -->
@@ -36,6 +36,11 @@
                                 <button class="btn btn-default" type="submit">Send Now<i class="fa fa-paper-plane-o"></i></button>			
                             </form>
                             <!-- Form Ends -->
+                        </div>
+                    </div>
+                    <div class="col-md-5" style="margin-top : 5px;">
+                        <div style="height : 400px; background-color : red" id="map">
+                            
                         </div>
                     </div>
                 </div>
